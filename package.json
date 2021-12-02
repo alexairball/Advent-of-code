@@ -1,0 +1,13 @@
+{
+  "name": "advent_of_code",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "git@github.com:alexairball/Advent-of-code.git",
+  "author": "alexairball <alexgoodsun@hotmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1"
+  }
+}
