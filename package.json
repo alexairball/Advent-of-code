@@ -5,8 +5,9 @@
   "repository": "git@github.com:alexairball/Advent-of-code.git",
   "author": "alexairball <alexgoodsun@hotmail.com>",
   "license": "MIT",
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
+    "axios": "^0.24.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.1"
   }
