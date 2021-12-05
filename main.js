@@ -10,12 +10,18 @@ const adventOfCodeYear = hardCodeYear || today.format("yyyy");
 const adventOfCodeDay = hardCodeDay || today.format("DD");
 
 const setup = async () => {
-  const inputExist = await fs.promises.stat(
-    `./input/${adventOfCodeYear}/${adventOfCodeDay}.txt`
-  );
-  const codeExist = await fs.promises.stat(
-    `./code/${adventOfCodeYear}/${adventOfCodeDay}.js`
-  );
+  let inputExist;
+  let codeExist;
+  try {
+    inputExist = await fs.promises.stat(
+      `./input/${adventOfCodeYear}/${adventOfCodeDay}.txt`
+    );
+  } catch (err) {}
+  try {
+    codeExist = await fs.promises.stat(
+      `./code/${adventOfCodeYear}/${adventOfCodeDay}.js`
+    );
+  } catch (err) {}
 
   //download input file
   if (!inputExist) {
