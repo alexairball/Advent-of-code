@@ -116,5 +116,4 @@ module.exports = (fileContent) => {
 
   const cleanArray = removeErrorLine(_.clone(parseContent));
   console.log(getFindMissingSign(cleanArray));
-  //<{([
 };
