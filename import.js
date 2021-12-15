@@ -12,6 +12,7 @@ const code_2021_11 = require("./code/2021/11.js");
 const code_2021_12 = require("./code/2021/12.js");
 const code_2021_13 = require("./code/2021/13.js");
 const code_2021_14 = require("./code/2021/14.js");
+const code_2021_15 = require("./code/2021/15.js");
 ("REQUIRE_REPLACE");
 
 module.exports = {
@@ -29,5 +30,6 @@ code_2021_11,
 code_2021_12,
 code_2021_13,
 code_2021_14,
+code_2021_15,
 undefined,
 };
